@@ -1,0 +1,99 @@
+/* CUSTOM STORY STYLE */
+body
+  background-color #EDE6DE
+  color #584835
+  a
+    color $darkred
+
+.prose-text
+  max-width 40rem
+  margin 0 auto
+  text-align left
+  line-height 1.7
+  color #2b1d0e
+  @media screen and (max-width: 800px)
+    padding 0px 15px
+  p
+    color #2b1d0e
+    font-size 1em
+  h3
+    color #584835
+    font-weight 700
+    font-size 1.2em
+
+/* Link hover image popup */
+a>div
+  display none
+
+a:hover>div
+  display block
+
+.key
+  width 100%
+  text-align center
+  font-family $atlas
+  font-size .7em
+  margin 5px 0px 5px 0px
+  display block
+  .square
+    margin 0px 5px 0px 20px
+  .bizkey
+    margin 0px 5px 0px 0px
+  span.circle
+    display inline-block
+    font-size .8em
+    margin 0px 5px 0px 20px
+    vertical-align text-top
+  .darkred
+    color $darkred
+  .darkyellow
+    color $darkyellow
+  .lightred
+    color $lightred
+  .lightyellow
+    color $lightyellow
+  .brown, .brown2, .brown3, .brown4
+    color $brown
+  .brown2
+    opacity .75
+  .brown3
+    opacity .5
+  .brown4
+    opacity .25
+
+hr
+  margin-top 100px
+
+.icons-1
+  width 100%
+  display flex
+  flex-wrap wrap
+  justify-content center
+  .gate
+    width 128px
+    height 128px
+    @media screen and (max-width: 450px)
+      width 64px
+      height 64px
+  .lantern
+    width 32px
+    height 32px
+    align-self center
+    @media screen and (max-width: 450px)
+      width 16px
+      height 16px
+  .lion
+    width 32px
+    height 32px
+    align-self flex-end
+
+
+.data-text
+  font-family $atlas
+  h3
+    font-size .7em
+    margin-bottom 0
+  p:empty
+    margin 0
+  p
+    font-size .7em

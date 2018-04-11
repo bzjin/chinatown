@@ -1,0 +1,13 @@
+city,demo,year,income,context
+boston,white,2010,84255,68162
+boston,black,2010,0,37974
+boston,latino,2010,0,30019
+boston,api,2010,13056,37027
+manhattan,white,2010,58265,62517
+manhattan,black,2010,44410,39927
+manhattan,latino,2010,31814,34467
+manhattan,api,2010,29524,53173
+philadelphia,white,2010,71064,48413
+philadelphia,black,2010,16978,29295
+philadelphia,latino,2010,16875,24971
+philadelphia,api,2010,32411,59969

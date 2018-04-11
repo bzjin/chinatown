@@ -1,0 +1,140 @@
+<div class='intro'>
+	<h1 class='intro__hed tk-canela'>{{copy.header}}</h1>
+	<p class='intro__dek tk-atlas'>{{copy.subhead}}</p>
+	<p class='intro__byline tk-atlas'>By
+		<a href='{{meta.author.url}}' target='_blank'>
+			<strong>{{meta.author.name}}</strong>
+		</a>
+	</p>
+</div>
+
+<!-- Introduction text -->
+<div class="prose-text">
+{{#each copy.intro}}
+	<p>{{{text}}}</p>
+{{/each}}
+</div>
+
+<!-- Section 1 -->
+<div class="prose-text">
+{{#each copy.section1}}
+	<p>{{{text}}}</p>
+{{/each}}
+</div>
+
+
+<!-- Section 2 -->
+<div class="prose-text">
+{{#each copy.section2}}
+	<p>{{{text}}}</p>
+{{/each}}
+</div>
+
+<div class="cities">
+	<h4> Race and Ethnicity </h4>
+		<p class="key">
+			<span class="brown square"> &#x25FC;</span> Other
+			<span class="brown2 square"> &#x25FC;</span> Latino
+			<span class="brown3 square"> &#x25FC;</span> Black
+			<span class="brown4 square"> &#x25FC;</span> White
+			<span class="darkred square"> &#x25FC;</span> Asian or Pacific Islander
+		</p>
+	<div class="demographics"></div>
+	<h4> Age </h4>
+		<p class="key">
+			<span class="darkred square"> &#x25FC;</span> 0-17 years
+			<span class="darkyellow square"> &#x25FC;</span> 18-24 years
+			<span class="lightyellow square"> &#x25FC;</span> 25-64 years
+			<span class="lightred square"> &#x25FC;</span> 65 years and over
+		</p>
+	<div class="age"></div>
+</div>
+
+<div class="prose-text">
+{{#each copy.section2a}}
+	<p>{{{text}}}</p>
+{{/each}}
+</div>
+
+<div class="cities1">
+	<h4> Household Income </h4>
+		<p class="key">
+			<span class="darkred circle">&#11044;</span> Chinatown resident
+			<span class="brown circle">&#11044;</span> City resident
+		</p>
+	<div class="income"></div>
+	<h4> Rent </h4>
+		<p class="key">
+			<span class="darkred circle">&#11044;</span> Chinatown resident
+			<span class="brown circle">&#11044;</span> City resident
+		</p>
+	<div class="rent"></div>
+</div>
+
+<div class="prose-text">
+{{#each copy.section2b}}
+	<p>{{{text}}}</p>
+{{/each}}
+</div>
+
+<div class="cities2">
+	<div class="biz-div">
+		<div class="businesses"></div>
+		<div class="cuisines"></div>
+	</div>
+</div>
+
+
+<div class="prose-text">
+{{#each copy.section2c}}
+	<p>{{{text}}}</p>
+{{/each}}
+</div>
+
+<!-- Section 3 -->
+<div class="prose-text">
+{{#each copy.section3}}
+	<p>{{{text}}}</p>
+{{/each}}
+</div>
+
+<div class="grid">
+	<p> Filter by geography </p>
+	<div id="filters" class="button-group">  <button class="button is-checked" data-filter="*">show all</button>
+	  <button class="button" data-filter=".united-states">United States (37)</button>
+	  <button class="button" data-filter=".asia">Asia (25)</button>
+	  <button class="button" data-filter=".canada">Canada (10)</button>
+	  <button class="button" data-filter=".europe">Europe (12)</button>
+	  <button class="button" data-filter=".australia">Australia (7)</button>
+	  <button class="button" data-filter=".africa">Africa (3)</button>
+	  <button class="button" data-filter=".latin-america">Latin America (6)</button>
+		<button class="button" data-filter=".africa">Africa (3)</button>
+	</div>
+
+	<p> Sort by... </p>
+	<div id="sorts" class="button-group">
+	  <button class="button is-checked" class="button" data-sort-by="start">Year Established</button>
+		<button class="button" data-sort-by="city">City Name</button>
+	  <button class="button" data-sort-by="status">Status</button>
+	</div>
+
+	<div id="sorts" class="button-group">
+	  <button class="button" class="button" id="descriptions">Show Descriptions</button>
+	</div>
+
+		<div class="grid_chart"></div>
+</div>
+
+<!-- Conclusion -->
+<div class="prose-text">
+	{{#each copy.conclusion}}
+		<p>{{{text}}}</p>
+	{{/each}}
+</div>
+
+<div class="prose-text data-text">
+	<hr>
+	{{#each copy.data_and_methodology}}
+		<p>{{{text}}}</p>
+	{{/each}}
+</div>

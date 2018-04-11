@@ -1,0 +1,123 @@
+/* TOURIST VIZ STYLING */
+.seattle-reasons-descriptions
+  width 100%
+  div
+    float left
+    overflow visible
+    width 50%
+    @media screen and (max-width: 600px)
+      width 100%
+    svg
+      overflow visible
+  rect
+    fill $darkyellow
+  rect.food
+    fill $darkred
+  g text
+    font-size 11px
+    font-weight 700
+
+.chart-title
+  font-weight 700
+  font-size 12px
+  text-anchor middle
+  fill $brown
+  text-transform uppercase
+  font-family $atlas
+
+.chart-label
+  font-weight 700
+  font-size 12px
+  text-anchor middle
+  font-family $atlas
+
+.percent-label
+  font-size 10px
+  fill grey
+  font-family $atlas
+
+.axis
+  stroke-width 0
+  text
+    font-size 10px
+.axis .tick line
+  stroke-width 1
+  opacity .3
+  stroke-dasharray 2 2
+
+#table
+  font-size .7em
+  font-family $atlas
+  font-weight 700
+  td
+    padding 0px 10px
+    margin 2px 10px
+  td:nth-child(2)
+    border-radius 5px
+  .criteria
+    font-size 8px
+    line-height 8px
+
+.cities, .cities1
+  .demographics, .income, .rent, .age
+    width 100%
+    display flex
+    flex-wrap wrap
+    justify-content center
+  div
+    float left
+    padding 10px 0px
+  h4
+    font-family $atlas
+    font-weight 700
+    font-size .8em
+    text-align center
+    text-transform uppercase
+
+circle.api
+  fill $darkred !important
+
+path.api, line.api
+  fill $darkred !important
+  fill-opacity 1 !important
+
+circle.chinatown
+  fill $darkred !important
+
+circle.context
+  fill $brown !important
+
+.income_text
+  font-size 10px
+
+text.rent, text.income
+  font-size 10px
+  font-family $atlas !important
+  font-weight 700
+
+.fact_chinatown
+  fill $darkred
+
+.fact_context
+  fill $brown
+
+path
+  &.black, &.latino, &.other, &.white
+    fill $brown !important
+    fill-opacity .3 !important
+
+.age17
+  fill $darkred
+.age24
+  fill $darkyellow
+.age64
+  fill $lightyellow
+.age65
+  fill $lightred
+
+span.footnote, span.caption
+  font-size 10px
+  text-align right
+  margin-top 0
+  display block
+  font-family $atlas

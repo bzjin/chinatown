@@ -1,0 +1,84 @@
+.grid
+  margin 0% 10%
+  p
+    margin 10px 0 0 0
+    text-align center
+    font-family $atlas
+    font-size 12px
+
+.grid_chart
+  margin 0 auto
+  display flex
+  justify-content center
+  flex-wrap wrap
+
+.town-item
+  display block
+  margin 10px
+  width ($column-width/7)
+  height ($column-width/7)
+  font-family $atlas
+  text-align center
+  @media screen and (max-width: 450px)
+    width ($column-width/5)
+    height ($column-width/5)
+  h3
+    font-weight 700
+    font-size 12px
+  p
+    font-size 11px
+    margin-top 0px
+    margin-bottom 0px
+  .start
+    font-weight 700
+  .status
+    display none
+  .reason, .comments
+    display none
+    text-align left
+    font-size 10px
+    line-height 1.2
+  div.iconimg
+    width 32px
+    height 32px
+    background-image url('assets/images/gate.png')
+    background-size contain
+    margin 5px auto
+  .non-present
+    filter grayscale(100%)
+
+.button-group
+  display flex
+  flex-wrap wrap
+  justify-content center
+  button
+    padding .2rem .5rem
+    font-size .7rem
+    cursor pointer
+    color white
+    text-align center
+    background-color $brown
+    border-radius 3px
+    margin 2px 2px
+    &:hover
+      background-color $brown
+    &:focus
+      outline none !important
+    &:active
+      outline none !important
+      background-color rgba(127,125,156,.14)
+    value
+      font-size 10px
+  .is-checked
+    font-weight 700
+
+div.tooltip
+  position absolute
+  text-align left
+  width 200px
+  padding 10px
+  font 10px $atlas
+  background white
+  border 0px
+  border-radius 2px
+  pointer-events none
